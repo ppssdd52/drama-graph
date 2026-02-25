@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "Александр Петрович Сумароков"
+  },
+  "text": {
+    "more": "",
+    "intro": "Визуализация сети взаимодействий персонажей в русской версии \"Гамлета\", созданной Александром Петровичем Сумароковым. Граф построен на основе данных корпуса Rus DraCor.",
+    "title": "Граф персонажей трагедии \"Гамлет\""
+  },
+  "legend": {
+    "edgeLabel": "Ребра (связи) показывают, что персонажи встречаются в одной сцене. Толщина ребра отражает частоту совместных появлений.",
+    "colorLabel": "Цвет узла определяет принадлежность к сообществу (кластеру), рассчитанному алгоритмом модулярности. Персонажи одного цвета чаще взаимодействуют друг с другом.",
+    "nodeLabel": "Узлы соответствуют персонажам трагедии Сумарокова. Размер узла показывает количество связей персонажа (чем крупнее узел, тем чаще персонаж взаимодействует с другими)."
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "Modularity Class",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
